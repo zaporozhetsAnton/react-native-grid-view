@@ -70,7 +70,7 @@ class CollectionView extends Component{
     return (<FlatList
     data={groups}
     {...this.props}
-    renderItem={this.renderGroup}
+    renderItem={this.renderGroup.bind(this)}
     />);
   }
 };
